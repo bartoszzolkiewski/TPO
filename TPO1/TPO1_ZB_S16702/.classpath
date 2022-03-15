@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/gui/jgoodies-common-1.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/gui/jgoodies-common-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/gui/jgoodies-forms-1.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/gui/jgoodies-forms-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/jaxb_fix/javassist-3.25.0-GA.jar"/>
+	<classpathentry kind="lib" path="lib/jaxb_fix/javax.activation-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/jaxb_fix/jaxb-core-2.3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/jaxb_fix/jaxb-impl-2.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/other/converter-gson-2.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/other/converter-jaxb-2.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/other/gson-2.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/other/javax.activation-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/other/jaxb-api-2.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/other/jsoup-1.14.3.jar"/>
+	<classpathentry kind="lib" path="lib/other/okhttp-3.14.9.jar"/>
+	<classpathentry kind="lib" path="lib/other/okio-1.17.2.jar"/>
+	<classpathentry kind="lib" path="lib/other/retrofit-2.9.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
