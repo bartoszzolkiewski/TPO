@@ -50,6 +50,7 @@ public class WindowController {
 
 		// Creation of scene and future interactions with JFXPanel
 		// should take place on the JavaFX Application Thread
+		Platform.setImplicitExit(false);
 		Platform.runLater(() -> {
 			WebView webView = new WebView();
 		    jfxPanel.setScene(new Scene(webView));

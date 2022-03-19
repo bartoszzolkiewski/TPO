@@ -57,12 +57,12 @@ public class Service {
 	}
 	
 	public Double getRateFor(String kod_waluty) {
-		ExchangeRateData exchangeRateData = this.getExchangeRateData(this.country.currency_code, kod_waluty);
+		ExchangeRateData exchangeRateData = this.getExchangeRateData(this.country.currency_code, kod_waluty.toUpperCase());
 		Map<String,Double> rates = exchangeRateData.getRates();		
-		return rates.get(kod_waluty);
+		return rates.get(kod_waluty.toUpperCase());
 	}
 	
 	public Double getNBPRate() {
-		return this.nbpController.getNBPRate(this.country.currency_code);
+		return this.nbpController.getNBPRate(this.country.currency_code.toUpperCase());
 	}
 }  
