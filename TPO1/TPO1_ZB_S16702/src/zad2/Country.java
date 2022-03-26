@@ -29,11 +29,7 @@ public class Country {
 	}
 	
 	private static Locale getLocaleForCountryName(String name) {
-		for (Locale locale : Locale.getAvailableLocales()) {
-			for (Locale locale2 : Locale.getAvailableLocales()) {
-		        System.out.println(locale.getDisplayCountry(locale2));
-			}
-	    }
+
 		for (Locale locale : Locale.getAvailableLocales()) {
 			for (Locale locale2 : Locale.getAvailableLocales()) {
 		        if (locale.getDisplayCountry(locale2).toLowerCase().equals(name.toLowerCase())) {
