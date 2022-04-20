@@ -22,16 +22,16 @@ public class ChatClientTask extends FutureTask<ChatClient> {
 		Callable<ChatClient> func = new Callable<ChatClient>() {
 			@Override
 			public ChatClient call() throws Exception {
-				client.sendLogin();
+				client.login();
 				TimeUnit.MILLISECONDS.sleep(wait);
 				
 				for (String msg : msgs) {
 					TimeUnit.MILLISECONDS.sleep(wait);
-					client.sendMessage(msg);
+					client.send(msg);
 				}
 				
 				TimeUnit.MILLISECONDS.sleep(wait);
-				client.sendLogout();
+				client.logout();
 				
 				while (!client.isInterrupted()) {}
 				return client;

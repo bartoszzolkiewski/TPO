@@ -72,7 +72,7 @@ public class ChatClient extends Thread {
 		this.logger.log("*** " + exc.toString(), false);
 	}
 
-	public void sendLogin() {
+	public void login() {
 		try {
 			this.sc = SocketChannel.open(new InetSocketAddress(this.host, this.port));
 			this.sc.configureBlocking(false);
@@ -84,11 +84,11 @@ public class ChatClient extends Thread {
 		}
 	}
 	
-	public void sendMessage(String msg) {
+	public void send(String msg) {
 		this.push("Push " + msg);
 	}
 	
-	public void sendLogout() {
+	public void logout() {
 		this.push("Bye xd");
 	}
 	
